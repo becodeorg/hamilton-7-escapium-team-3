@@ -1,0 +1,23 @@
+{
+  "name": "hamilton-7-escapium-team-3",
+  "version": "1.0.0",
+  "description": "Create a pixel-perfect and responsive Website for an Escape Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch resources/scss/style.scss resources/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becodeorg/hamilton-7-escapium-team-3.git"
+  },
+  "author": "Khadja-Christophe-Igor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becodeorg/hamilton-7-escapium-team-3/issues"
+  },
+  "homepage": "https://github.com/becodeorg/hamilton-7-escapium-team-3#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
