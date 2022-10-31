@@ -1,16 +1,28 @@
-const header_img = document.querySelector(".header_content-carousel");
-console.log (header_img);
-let i = 0;
-// Header carousel changes images every 10 seconds
-setInterval(function(){  
-    header_img.children.forEach((img,i) =>{
-        header_img.children = 'none';
-    })
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    if ( i == header_img.length){
-        i = 0;
-    }
-    header_img.children[i].style.display = 'block';
-    // i++;
-    console.log('I run every 2 seconds indefinitely');
-}, 10000);
+// // Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
