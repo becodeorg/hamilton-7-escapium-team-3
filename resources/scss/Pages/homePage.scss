@@ -1,0 +1,81 @@
+@mixin slides-titles{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    color: white;
+    font-family: $font-heading;
+}   
+
+@media screen and (max-width: 768px){
+    .slideshow-container{
+        display:flex;
+        align-content: center;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        // border-radius: 100%;
+        // width: 100%;
+        .mySlides{
+            display:none;
+        }    
+        img{
+            width: 100%;
+            height: auto;
+        }
+        h1{
+            @include slides-titles();
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        h2{
+            @include slides-titles();
+            font-size: 1.5em;
+            text-transform: uppercase;
+        }
+    }
+}
+// .slideshow-container {
+//     position: relative;
+//     .mySlides {
+//         display: none;
+//     }
+//     .next {
+//         right: 0;
+//         border-radius: 3px 0 0 3px;
+//     }
+//     .prev:hover, .next:hover {
+//         background-color: rgba(0,0,0,0.8);
+//     }
+//     .slides_img {
+//        width: 100%;
+//     }
+//     .slides_h1, .slides_h2 {
+//         color: #f2f2f2;
+//         font-size: 15px;
+//         position: absolute;
+//         bottom: 20px;
+//         width: 100%;
+//         text-align: center;
+//     }
+//     .dot {
+//         cursor: pointer;
+//         height: 9px;
+//         width: 15px;
+//         margin: 0 2px;
+//         background-color: #bbb;
+//         display: inline-block;
+//         bottom: 30 px;
+//         transition: background-color 0.6s ease;
+//     }
+//     .active, .dot:hover {
+//         background-color: #717171;
+//     }
+//     .fade {
+//         animation-name: fade;
+//         animation-duration: 1.5s;
+//     }
+//     @keyframes fade {
+//         from {opacity: .4}
+//         to {opacity: 1}
+//     }
+// }
