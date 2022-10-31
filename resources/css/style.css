@@ -96,4 +96,44 @@ nav .nav--left li a {
   text-decoration: none;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  /* background-image : url("/resources/images/images/gallery/room-7-360x222.jpg");*/
+  background-size: cover;
+  opacity: 1;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+  height: 500px;
+  padding-top: 23%;
+  text-decoration: #5e6167;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center;
+}
+
+.our_address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: #5e6167;
+  width: 145px;
+}
+
+.escapium_end {
+  justify-content: center;
+  text-decoration: #5e6167;
+}
+
+.img_escapium {
+  width: 50%;
+  height: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */
