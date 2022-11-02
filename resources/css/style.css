@@ -49,6 +49,10 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-VariableFont_wght.ttf);
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -177,6 +181,89 @@ nav .btn:hover {
     display: none;
   }
 }
+footer {
+  display: grid;
+  flex-direction: column;
+  background-color: black;
+  color: #5e6167;
+  width: 84vw;
+  /*justify-content: space-around;*/
+  padding-top: 23%;
+  margin-top: 488px;
+  height: 300px;
+  /*align-content: space-around;*/
+  position: relative;
+}
+footer::after {
+  background-image: url("/resources/images/images/gallery/room-7-360x222.jpg");
+  background-size: cover;
+  background-position-y: center;
+  opacity: 0.2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.information {
+  display: grid;
+  flex-wrap: wrap;
+  width: 84vw;
+  justify-content: center;
+  margin: auto;
+  padding: 0%;
+}
+
+h1 {
+  color: white;
+  line-height: 550%;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.our_address {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  width: 145px;
+}
+
+.useful_links {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+.useful_links a {
+  text-decoration: none;
+  color: #5e6167;
+}
+
+.working_hours {
+  box-sizing: content-box;
+  justify-content: center;
+}
+
+.open {
+  display: flex;
+}
+
+.social_links {
+  flex-direction: column;
+  box-sizing: content-box;
+  justify-items: center;
+}
+
+.escapium_end {
+  justify-content: center;
+}
+
+.img_escapium {
+  width: 50%;
+  height: 50%;
+}
+
 header {
   background-image: url("/resources/images/images/gallery/slide-1.jpg");
   background-size: 1920px;
@@ -385,51 +472,6 @@ header .subTitle p {
     width: 60%;
     margin: 20px auto;
   }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  color: black;
-  /* background-image : url("/resources/images/images/gallery/room-7-360x222.jpg");*/
-  background-size: cover;
-  opacity: 1;
-  align-items: center;
-  width: 100vw;
-  justify-content: center;
-  height: 500px;
-  padding-top: 23%;
-  text-decoration: #5e6167;
-}
-
-.information {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  justify-content: center;
-}
-
-.our_address {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: #5e6167;
-  width: 145px;
-}
-
-.escapium_end {
-  justify-content: center;
-  text-decoration: #5e6167;
-}
-
-.img_escapium {
-  width: 50%;
-  height: 50%;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(../../fonts/Montserrat-VariableFont_wght.ttf);
-
 }
 @media screen and (max-width: 768px) {
   .slideshow-container {
