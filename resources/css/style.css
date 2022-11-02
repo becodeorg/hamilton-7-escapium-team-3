@@ -49,10 +49,6 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../../fonts/Montserrat-VariableFont_wght.ttf);
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -872,38 +868,189 @@ main {
     margin: 0 10px;
   }
 }
+.slideshow-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: -1;
+}
+.slideshow-container .mySlides {
+  display: none;
+}
+.slideshow-container .slide-bg-img1 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(28, 28, 28) 100%), url("../images/images/gallery/slide-4.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.slideshow-container .slide-bg-img2 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(28, 28, 28) 100%), url("../images/images/gallery/gallery/slide-1.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.slideshow-container .slide-bg-img3 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(28, 28, 28) 100%), url("../images/images/gallery/slide-2-557x400.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.slideshow-container .slide-bg-img4 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(28, 28, 28) 100%), url("../images/images/gallery/room-7-360x222.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.slideshow-container h1 {
+  position: absolute;
+  color: white;
+  font-family: Montserrat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.slideshow-container h2 {
+  position: absolute;
+  color: white;
+  font-family: Montserrat;
+  top: 50%;
+  left: 50%;
+  margin-top: 70px;
+  transform: translate(-50%, -50%);
+}
+.slideshow-container .slide-line {
+  visibility: none;
+}
+
 @media screen and (max-width: 768px) {
   .slideshow-container {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-  }
-  .slideshow-container .mySlides {
-    display: none;
-  }
-  .slideshow-container img {
-    width: 100%;
-    height: auto;
+    max-width: 768px;
+    height: 380px;
   }
   .slideshow-container h1 {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    color: white;
-    font-family: Montserrat;
-    font-size: 2.5em;
+    width: 300px;
+    font-size: 35px;
     font-weight: 700;
   }
   .slideshow-container h2 {
-    display: flex;
-    flex-wrap: wrap;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 70px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  .slideshow-container {
+    height: 600px;
+    max-width: 1920px;
+  }
+  .slideshow-container h1 {
     position: absolute;
     color: white;
     font-family: Montserrat;
-    font-size: 1.5em;
-    text-transform: uppercase;
+    width: 400px;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .slideshow-container h2 {
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 150;
+    margin-top: 100px;
+    letter-spacing: 2px;
+  }
+  .slideshow-container h2::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 70px;
+    background-color: white;
+    left: -20px;
+    top: 12px;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .slideshow-container {
+    height: 600px;
+    max-width: 1920px;
+  }
+  .slideshow-container h1 {
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    width: 600px;
+    font-size: 90px;
+    font-weight: 700;
+  }
+  .slideshow-container h2 {
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    width: 400px;
+    font-size: 40px;
+    font-weight: 150;
+    margin-top: 150px;
+    letter-spacing: 2px;
+  }
+  .slideshow-container h2::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 70px;
+    background-color: white;
+    left: -50px;
+    top: 20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .slideshow-container {
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+  }
+  .slideshow-container h1 {
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    width: 800px;
+    font-size: 120px;
+    font-weight: 700;
+    text-align: justify;
+    left: 25%;
+  }
+  .slideshow-container h2 {
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    width: 400px;
+    font-size: 30px;
+    font-weight: 150;
+    margin-top: 250px;
+    text-align: justify;
+    left: 25%;
+    letter-spacing: 2px;
+  }
+  .slideshow-container h2::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    left: -180px;
+    top: 20px;
+  }
+  .slideshow-container .dots {
+    display: absolute;
+    width: 150px;
+    height: 2px;
+    border-style: unset;
   }
 }
 main {
