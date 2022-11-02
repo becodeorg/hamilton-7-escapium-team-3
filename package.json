@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/becodeorg/hamilton-7-escapium-team-3#readme",
   "dependencies": {
+    "rellax": "^1.12.1",
     "sass": "^1.55.0"
   }
 }

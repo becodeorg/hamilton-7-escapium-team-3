@@ -3,13 +3,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 15px;
     background-color: #22222250;
+    transition: 0.3s ease-in;
 
     .nav--left {
         display: flex;
