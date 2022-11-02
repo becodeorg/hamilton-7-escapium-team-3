@@ -1,5 +1,6 @@
 /*----------Side bar----------*/
 
+const header = document.querySelector('header');
 const nav = document.querySelector('#navMenu');
 const menu = document.querySelector('.menu');
 const openMenuBtn = document.querySelector('.fa-bars');
@@ -23,6 +24,27 @@ function hideNav() {
         nav.style.top = '-100px';
     }
 }
+
+document.addEventListener('scroll', () => {
+    if(document.documentElement.scrollTop > 100) {
+        nav.style.top = '-80px';
+    }
+    else {
+        nav.style.top = '0';
+    }
+})
+
+/*----------Parallax----------*/
+
+const parallax = document.querySelector('.parallax');
+
+document.addEventListener('scroll', () => {
+        let offset = document.documentElement.scrollTop;
+        parallax.setAttribute('style', `background-position-y: -${offset*0.2-80}px`);
+        header.setAttribute('style', `background-position-y: -${offset*0.2-100}px`);
+
+   
+})
 
 
 let slideIndex = 1;
@@ -52,3 +74,4 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
