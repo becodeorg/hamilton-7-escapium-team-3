@@ -32,6 +32,12 @@
             <a class="btn" href="#">Book Now!</a>    
         </nav>
         <!-- HEADER CONTENT -->
+        <div class="mySlides_dots" style="text-align: center">
+            <div class="dot" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+            <div class="dot" onclick="currentSlide(3)"></div>
+            <div class="dot" onclick="currentSlide(4)"></div>
+        </div>
         <div class="slideshow-container">
             <div class="mySlides fade slide-bg-img1">
                 <h1>Escape<br />in 60mins?</h1>
@@ -49,58 +55,196 @@
                 <h1>What is Escapium?</h1>
                 <h2>view our rooms</h2>
             </div>
-            <a class="prev" onclick="plusSlides(-1)"></a>
-            <a class="next" onclick="plusSlides(1)"></a>
-            <div class="mySlides_dots" style="text-align: center">
-                <div class="dot" onclick="currentSlide(1)"><button class="dots"></button></div>
-                <div class="dot" onclick="currentSlide(2)"><button class="dots"></button></div>
-                <div class="dot" onclick="currentSlide(3)"><button class="dots"></button></div>
-                <div class="dot" onclick="currentSlide(4)"><button class="dots"></button></div>
-            </div>
         </div>
     </header>
     <!-- MAIN -->
     <main>
         <!-- FEATURES ROOMS  -->
-        <!-- <section class="features_rooms">
+        <section class="features_rooms-container">
+            <h2 class= "features_rooms-title">Featured Rooms</h2>
             <div class="features_rooms-article">
-                <div class="features_rooms-img"></div>
-                <div class="features_rooms-levels"></div>
-                <div class="features_rooms-texts">
-                    <h2></h2>
-                    <h3>
-                        <ul class="features_rooms-">
-                            <li><i class="bi bi-facebook"></i><br />2-3</li>
-                            <li><i class="fa-light fa-timer"></i></i> <br />60</li>
-                            <li><i class="bi bi-twitter"></i><br />NY 3031</li>
-                        </ul>
-                    </h3>
+                <img class="features_rooms-img" src="./resources/images/images/gallery/slide-2-557x400.jpg" alt="" >
+                <div class="features_rooms-description">
+                    <ul class="features_rooms-difficulty">
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                    </ul>
+                    <div class="features_rooms-texts">
+                        <h3>Magic Imporium</h3>
+                            <ul class="features_rooms-characteristics">
+                                <li><i class="fa-solid fa-user-group"></i>2-3</li>
+                                <li><i class="fa-regular fa-clock"></i>60</li>
+                                <li><i class="fa-solid fa-location-dot"></i>NY 3031</li>
+                            </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut diam a dolor dignissim commodo in at massa...</p>
+                        <button>Read More</button>
+                    </div>
                 </div>
-                
             </div>
-            <div class="features_rooms-article"></div>
-            <div class="features_rooms-article"></div>
-        </section> -->
+            <div class="features_rooms-article">
+                <img class="features_rooms-img" src="./resources/images/images/gallery/slide-2-557x400.jpg" alt="" >
+                <div class="features_rooms-description">
+                    <ul class="features_rooms-difficulty">
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                    </ul>
+                    <div class="features_rooms-texts">
+                        <h3>The Cure</h3>
+                            <ul class="features_rooms-characteristics">
+                                <li><i class="fa-solid fa-user-group"></i>2-3</li>
+                                <li><i class="fa-regular fa-clock"></i>60</li>
+                                <li><i class="fa-solid fa-location-dot"></i>LA 20198</li>
+                            </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut diam a dolor dignissim commodo in at massa...</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="features_rooms-article">
+                <img class="features_rooms-img" src="./resources/images/images/gallery/slide-2-557x400.jpg" alt="" >
+                <div class="features_rooms-description">
+                    <ul class="features_rooms-difficulty">
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                    </ul>
+                    <div class="features_rooms-texts">
+                        <h3>Burlesque</h3>
+                            <ul class="features_rooms-characteristics">
+                                <li><i class="fa-solid fa-user-group"></i>2-3</li>
+                                <li><i class="fa-regular fa-clock"></i>60</li>
+                                <li><i class="fa-solid fa-location-dot"></i>BH 90210</li>
+                            </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut diam a dolor dignissim commodo in at massa...</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- NEED TO DO THE LARGE MEDIA QUERY -->
+        </section>
+        <!-- HOW IT WORKS  -->
+        <section class="Howitworks_container">
+            <h2>How it works</h2>
+            <div clas="Howitworks_container-elements">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-lock-open"></i>
+                        <h3>You Are Locked In</h3>
+                        <p>You will bring nothing in, but the escape room will be filled with useful and sometimes irrelevant objects. </p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <h3>The Clock Is Ticking... </h3>
+                        <p>Can you puzzle your way to the intriguing conclusion and escape the room in 60 minutes?</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-wave-square"></i>
+                        <h3>Feel The Atmosphere </h3>
+                        <p>The rooms is built to create an authentic experience with a fun atmosphere, strict attention to detail.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- TESTIMONIALS  -->
+        <section class="testimonials_container">
+            <h1>Testimonials</h1>
+            <div class="caroussel">
+                <div class="caroussel__card">
+                    <p>"This place is a blast, especially for groups! I loved seeing how group members of different personalities approached the puzzles."</p>
+                    <img src="/resources/images/images/avatars/comment-avatar-2.png">
+                    <p class="customer--name">Tiffany</p>
+                </div>
+                <div class="caroussel__card">
+                    <p>"My family and I had a spectacular experience here and they are above and beyond in customer service and entertainement."</p>
+                    <img src="/resources/images/images/avatars/comment-avatar-1.png">
+                    <p class="customer--name">Aaron</p>
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </section>
+        <!-- LATEST BLOG POSTS  -->
+        <section class="blogposts_container">
+            <h2 class="container-h2">Latest Blog Posts</h2>
+            <h3><a href="#">Browse All Blog Posts</a></h3>
+            <div class="blog__articles">
+                <div class="articles__container">
+                    <div class="articles__thumbnail">
+                        <img src="./resources/images/images/avatars/c3c95c15683498ce1cf96c1a61b662c9.png" alt="picture of the author">
+                        <p>Andy Bernard</p>
+                    </div>
+                    <div class="article__content">
+                        <p class="content__small--title">Basics</p>
+                        <h2 class="article__content-title">What is an Escape Room?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in lectus laoreet, pharetra magna quis, tempor enim.</p>
+                    </div>
+                </div>
+                <div class="articles__container">
+                    <div class="articles__thumbnail">
+                        <img src="./resources/images/images/avatars/betty-draper.png" alt="picture of the author">
+                        <p>Betty Draper</p>
+                    </div>
+                    <div class="article__content">
+                        <p class="content__small--title">Basics</p>
+                        <h2 class="article__content-title">Kidnapped Game Now Open</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in lectus laoreet, pharetra magna quis, tempor enim.</p>
+                    </div>
+                </div>
+                <div class="articles__container">
+                    <div class="articles__thumbnail">
+                        <img src="./resources/images/images/avatars/c3c95c15683498ce1cf96c1a61b662c9.png" alt="picture of the author">
+                        <p>Andy Bernard</p>
+                    </div>
+                    <div class="article__content">
+                        <p class="content__small--title">Basics</p>
+                        <h2 class="article__content-title">Team Building</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in lectus laoreet, pharetra magna quis, tempor enim.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- WHO CAN PLAY  -->
+        <section class="whocanplay_container">
+            <h2>Who can play</h2>
+            <ul>
+                <li><i class="fa-solid fa-users-line"></i>Friends and family</li>
+                <li><i class="fa-solid fa-briefcase"></i>Teams and co-workers</li>
+                <li><i class="fa-solid fa-gamepad"></i>Game lovers</li>
+                <li><i class="fa-solid fa-plane-up"></i>Tourists</li>
+            </ul>
+        </section>
     </main>
     <!-- FOOTER -->
-    <!-- <footer>
+   <footer>
         
-            <div class="information">
+        <div class="information">
                 <div class="our_address">
+                    <div class="numero_h1">01</div>
                     <h1 class="h1">Our Address</h1>
                     <p class="our_address_p">
-                    
-                        Escape Room Ltd.
+                        Escape Room Ltd.<br />
                         2390 RoadHill St, Suite 100
                         North Downtown, NY 82153
                     </p>
                     <p class="our_address_p">
-                        Email: <a href="info@escapium.com"></a>
+                        Email: <a class="email_footer" href="info@escapium.com">info@escapium.com</a></span>
                         Tel: +1 800 900 1248
                     </p>
                 </div>
 
             <div class="useful_links">
+                <div class="numero_h1">02 </div>
                 <h1 class="h1">Useful Links</h1>
                     
                     <a href="#">ABOUT</a>
@@ -110,9 +254,9 @@
                     <a href="#">FAQ</a>
                     <a href="#">CONTACT</a>
                 
-    
-            </div>
+             </div>
             <div class="working_hours">
+                <div class="numero_h1">03</div>
                 <h1 class="h1">Working Hours</h1>
                 
                    <div class="open"> 
@@ -139,22 +283,25 @@
                 
             </div>
             <div class="social_links">
+                <div class="numero_h1">04</div>
                 <h1 class="h1">Social Links</h1>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-square-twitter"></i>
-                <i class="fa-brands fa-square-instagram"></i>
+                
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-yelp"></i>
-                <i class="fa-brands fa-square-youtube"></i>
-                <i class="fa-brands fa-google-plus"></i>
-            </div>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
             
+        </div>
+    </div>
             <div class="escapium_end">
                 <img class="img_escapium" src="resources/images/images/logo/footer-logo.png" alt="">
-                <p>Copyright <i class="fa-regular fa-copyright"></i> 2020 Escapium | All Rights Reserved
+                <p class="copyright_footer">Copyright <i class="fa-regular fa-copyright"></i> 2020 Escapium | All Rights Reserved
                 </p>
             </div>
-        </div>
-    </footer> -->
+        
+    </footer>
     <script src="./resources/js/index.js"></script>
 </body>
 </html>
