@@ -1,33 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+@charset "UTF-8";
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "../Helpers/v";
+ *   | ^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   resources/scss/Pages/homePage.scss 1:1  root stylesheet */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
 }
 
 body {
   line-height: 1;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
 }
 
 ol, ul {
@@ -1292,6 +1280,7 @@ main {
   .info .info__form .btn {
     margin-bottom: 50px !important;
   }
+  
 }
 .blog {
   background-color: #1B1B1B;

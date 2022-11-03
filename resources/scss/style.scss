@@ -1,9 +1,17 @@
-@import './Base/reset';
-@import './Base/typography';
-@import './Helpers/variable';
-@import './Layout/navbar';
-@import "./Layout/footer";
-@import './Pages/about';
-@import './Pages/homePage.scss';
-@import './Pages/contact';
-@import './Pages/blogs';
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "../Helpers/v";
+ *   | ^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   resources/scss/Pages/homePage.scss 1:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"../Helpers/v\";\a   \2502  ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   resources/scss/Pages/homePage.scss 1:1  root stylesheet";
+}
