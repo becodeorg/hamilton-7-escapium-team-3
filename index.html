@@ -32,6 +32,12 @@
             <a class="btn" href="#">Book Now!</a>    
         </nav>
         <!-- HEADER CONTENT -->
+        <div class="mySlides_dots" style="text-align: center">
+            <div class="dot" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+            <div class="dot" onclick="currentSlide(3)"></div>
+            <div class="dot" onclick="currentSlide(4)"></div>
+        </div>
         <div class="slideshow-container">
             <div class="mySlides fade slide-bg-img1">
                 <h1>Escape<br />in 60mins?</h1>
@@ -49,38 +55,103 @@
                 <h1>What is Escapium?</h1>
                 <h2>view our rooms</h2>
             </div>
-            <a class="prev" onclick="plusSlides(-1)"></a>
-            <a class="next" onclick="plusSlides(1)"></a>
-            <div class="mySlides_dots" style="text-align: center">
-                <div class="dot" onclick="currentSlide(1)"><button class="dots"></button></div>
-                <div class="dot" onclick="currentSlide(2)"><button class="dots"></button></div>
-                <div class="dot" onclick="currentSlide(3)"><button class="dots"></button></div>
-                <div class="dot" onclick="currentSlide(4)"><button class="dots"></button></div>
-            </div>
         </div>
     </header>
     <!-- MAIN -->
     <main>
         <!-- FEATURES ROOMS  -->
-        <!-- <section class="features_rooms">
+        <section class="features_rooms-container">
+            <h2 class= "features_rooms-title">Featured Rooms</h2>
             <div class="features_rooms-article">
-                <div class="features_rooms-img"></div>
-                <div class="features_rooms-levels"></div>
-                <div class="features_rooms-texts">
-                    <h2></h2>
-                    <h3>
-                        <ul class="features_rooms-">
-                            <li><i class="bi bi-facebook"></i><br />2-3</li>
-                            <li><i class="fa-light fa-timer"></i></i> <br />60</li>
-                            <li><i class="bi bi-twitter"></i><br />NY 3031</li>
-                        </ul>
-                    </h3>
+                <img class="features_rooms-img" src="./resources/images/images/gallery/slide-2-557x400.jpg" alt="" >
+                <div class="features_rooms-description">
+                    <ul class="features_rooms-difficulty">
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                    </ul>
+                    <div class="features_rooms-texts">
+                        <h3>Magic Imporium</h3>
+                            <ul class="features_rooms-characteristics">
+                                <li><i class="fa-solid fa-user-group"></i>2-3</li>
+                                <li><i class="fa-regular fa-clock"></i>60</li>
+                                <li><i class="fa-solid fa-location-dot"></i>NY 3031</li>
+                            </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut diam a dolor dignissim commodo in at massa...</p>
+                        <button>Read More</button>
+                    </div>
                 </div>
-                
             </div>
-            <div class="features_rooms-article"></div>
-            <div class="features_rooms-article"></div>
-        </section> -->
+            <div class="features_rooms-article">
+                <img class="features_rooms-img" src="./resources/images/images/gallery/slide-2-557x400.jpg" alt="" >
+                <div class="features_rooms-description">
+                    <ul class="features_rooms-difficulty">
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                    </ul>
+                    <div class="features_rooms-texts">
+                        <h3>The Cure</h3>
+                            <ul class="features_rooms-characteristics">
+                                <li><i class="fa-solid fa-user-group"></i>2-3</li>
+                                <li><i class="fa-regular fa-clock"></i>60</li>
+                                <li><i class="fa-solid fa-location-dot"></i>LA 20198</li>
+                            </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut diam a dolor dignissim commodo in at massa...</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="features_rooms-article">
+                <img class="features_rooms-img" src="./resources/images/images/gallery/slide-2-557x400.jpg" alt="" >
+                <div class="features_rooms-description">
+                    <ul class="features_rooms-difficulty">
+                        <li><i class="fa-solid fa-lock active"></i></li>
+                        <li><i class="fa-solid fa-lock active"></i></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                        <li><i class="fa-solid fa-lock"></i></li>
+                    </ul>
+                    <div class="features_rooms-texts">
+                        <h3>Burlesque</h3>
+                            <ul class="features_rooms-characteristics">
+                                <li><i class="fa-solid fa-user-group"></i>2-3</li>
+                                <li><i class="fa-regular fa-clock"></i>60</li>
+                                <li><i class="fa-solid fa-location-dot"></i>BH 90210</li>
+                            </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut diam a dolor dignissim commodo in at massa...</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- NEED TO DO THE LARGE MEDIA QUERY -->
+        </section>
+        <section class="Howitworks_container">
+            <h2>How it works</h2>
+            <div clas="Howitworks_container-elements">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-lock-open"></i>
+                        <h3>You Are Locked In</h3>
+                        <p>You will bring nothing in, but the escape room will be filled with useful and sometimes irrelevant objects. </p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <h3>The Clock Is Ticking... </h3>
+                        <p>Can you puzzle your way to the intriguing conclusion and escape the room in 60 minutes?</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-wave-square"></i>
+                        <h3>Feel The Atmosphere </h3>
+                        <p>The rooms is built to create an authentic experience with a fun atmosphere, strict attention to detail.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
    <footer>
