@@ -1,10 +1,19 @@
-@use "../Helpers/v";
+@import '../Base/reset';
+@import '../Base/typography';
+@import '../Helpers/variable';
+@import '../Layout/navbar';
+@import "../Layout/footer";
+@import '../Pages/about';
+@import '../Pages/contact';
+@import '../Pages/blogs';
 
 @mixin slides-titles{
     position: absolute;
     color: white;
     font-family: Montserrat;
 }
+
+// HOMEPAGE HEADER
 .slideshow-container{
     position: relative;
     text-align: center;
@@ -52,12 +61,143 @@
         margin-top: 70px;
         transform: translate(-50%, -50%);
     }
-    .slide-line{
-        visibility: none;
+}
+// ROOMS SECTION
+
+.features_rooms-container{
+    position: relative;
+    background-color: $darkest-background;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 37px;
+        height: 5px;
+        background-color: rgb(51,51,51);
+        border-radius: 30px;
     }
+    .features_rooms-title{
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 55px;
+        margin-bottom: 200px;
+    }
+    .features_rooms-article{
+        background-color: $dark-background;
+        margin-bottom: 60px;
+        box-shadow: 1px 9px 15px 0px rgba(0,0,0,0.51);
+        .features_rooms-description{
+            background-color: $dark-background;
+            .features_rooms-difficulty{
+                display: flex;
+                flex-direction: row;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: $nav-font-color;
+                li{
+                    font-size: 10px;
+                    margin:3px 3px 3px 3px;
+                }
+                li .active{
+                    color: red;
+                }
+            }
+            .features_rooms-texts{
+                text-align: justify;
+                padding-left: 30px;
+                padding-right: 30px ;
+                h3{
+                    font-weight: 700;
+                    line-height: 30px;
+                }
+                .features_rooms-characteristics{
+                display: flex;
+                flex-direction: row;
+                line-height: 30px;
+                    li{
+                        font-size: 8px;
+                        margin-right: 10px;
+                        color: $nav-font-color;
+                        i{
+                            margin-right: 10px;
+                            font-size: 10px;
+                            color: $white-background
+                        }
+                    }
+                }
+                p{
+                    color: $nav-font-color;
+                    font-size: 12px;
+                }
+                button{
+                    color: $white-background;
+                    background-color: $red;
+                    height: 35px;
+                    width: 120px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    border-style: unset;
+                    border-radius: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+    }
+    
 }
 
+
+// SECTION HOW IT WORK
+
+.Howitworks_container{
+    background-color: $dark-background;
+    position: relative;    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 37px;
+        height: 5px;
+        background-color: rgb(51,51,51);
+        border-radius: 30px;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        li{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    }
+    
+
+// SMALL SCREEN
 @media screen and (max-width: 768px){
+    header{
+        .dot{
+            visibility: hidden;
+        }
+    }
     .slideshow-container{
         max-width: 768px;
         height: 380px;
@@ -75,8 +215,27 @@
             text-align: center;
         }
     }
+    .features_rooms-container{
+        max-width: 768px;
+        display: flex;
+        
+        .features_rooms-article{
+            max-width: 80vw;
+            width: 80vw;
+            .features_rooms-img{
+                max-width: 80vw;
+                width: 80vw;
+            }
+            .features_rooms-title{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
 }
 
+// MEDIUM SCREEN
 @media screen and (min-width: 768px) and (max-width: 1250px){
     .slideshow-container{
         height: 600px;
@@ -107,9 +266,35 @@
         }
         
     }
+    .features_rooms-container{
+        max-width: 1250px;
+        display: flex;
+        
+        .features_rooms-article{
+            max-width: 800px;
+            width: 70vw;
+            .features_rooms-img{
+                max-width: 800px;
+                width: 70vw;
+
+            }
+            .features_rooms-title{
+                font-size: 20px;
+                margin-bottom: 120px;
+            }
+        }
+        
+    }
+    
 }
 
+// MEDIUM SCREEN 2
 @media screen and (min-width: 1250px) and (max-width: 1920px){
+    header{
+        .dot{
+            visibility: hidden;
+        }
+    }
     .slideshow-container{
         height: 600px;
         max-width: 1920px;
@@ -140,6 +325,8 @@
         
     }
 }
+
+// LARGE SCREEN
 @media screen and (min-width: 1920px){
     .slideshow-container{
         height: 900px;
@@ -174,20 +361,39 @@
                 top: 20px;
             }
         }
+    }
+    header{
+        position: relative;
         .mySlides_dots{
-            position: relative;
-            .dots{
-                display: flex;
+            .dot{
                 position: absolute;
-                width: 150px;
+                width: 60px;
                 height: 2px;
                 border-style: unset;
-                z-index: 50;
-                top: 30;
+                background-color: $global-font-color;
+                border-radius: 10%;
+                z-index: 120;
+                top: 450px;
+                right: 150px;
+                // TRAVAILLER LA DESSUS 
+            }
+            .dot:nth-child(1){
+                margin-top: 40px;
+            }
+            .dot:nth-child(2){
+                margin-top: 60px;
+            }
+            .dot:nth-child(3){
+                margin-top: 80px;
+            }
+            .dot:nth-child(4){
+                margin-top: 100px;
+            }
+            .active, .dot:hover {
+                background-color: $white-background;
+                width: 100px;
             }
         }
-        
-        
     }
     
 }
