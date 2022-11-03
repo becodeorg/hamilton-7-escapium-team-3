@@ -1366,6 +1366,7 @@ main {
   justify-content: center;
   width: auto;
   height: auto;
+  font-family: Montserrat;
 }
 
 .Howitworks_container::after {
@@ -1380,14 +1381,22 @@ main {
   border-radius: 30px;
 }
 
+.Howitworks_container h2 {
+  color: white;
+  text-align: center;
+}
+
 .Howitworks_container ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .Howitworks_container ul li {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  color: #fefefe;
 }
 
 @media screen and (max-width: 768px) {
