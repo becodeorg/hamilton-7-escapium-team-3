@@ -1,89 +1,109 @@
 footer{
-    display: grid;
-    flex-direction: column;
-    background-color: black;
-    color: #5e6167;
-    width: 84vw;
-    /*justify-content: space-around;*/
-    padding-top: 23%;
-    margin-top: 488px;
-    height: 300px;
-    /*align-content: space-around;*/
-    
-    
-    position: relative;
-    &::after {
-        background-image : url("/resources/images/images/gallery/room-7-360x222.jpg");
-        background-size: cover;
-        background-position-y: center;
-        opacity: 0.2;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    h1{
-        color:white;
-        line-height: 550%;
-        font-weight: bold;
-        font-size: 150%;
-    }
-
-}
-
-.information{
-    display: grid;
-    flex-wrap: wrap;
-    width: 84vw;
-    justify-content: center;
-    margin: auto;
-    padding: 0%;
-}
-
-
-
-.our_address{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    width: 145px;
-}
-
-.useful_links{
-    display: flex;
-    flex-direction: column;
-    box-sizing: content-box;
-
-    a {
-        text-decoration: none;
-        color:#5e6167
-    }
-}
-
-.working_hours{
-    box-sizing: content-box;
-    justify-content: center;
-
-}
-
-.open{
-    display: flex;
-}
-
-.social_links{
-    flex-direction: column;
-    box-sizing: content-box;
+    font-family: Montserrat;
+    font-weight: bolder;
+    color: #717171;
+    width: 100%;
+    background-image : linear-gradient( 
+    rgba(0, 0, 0, 0.678) 0%, rgba(0, 0, 0, 0.781) 100%), url("/resources/images/images/gallery/room-7-360x222.jpg") ;
+    background-size: cover;
+    background-position: center;
+    display :flex;
+    align-items: center;
     justify-items: center;
+    flex-direction: column;
+       
+     h1{
+        color:white;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .numero_h1{
+        margin: 30px 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 30px;
+            background-color: #F60B0E;
+            width: 30px;
+            height: 2px;
+    }
+}
+
+    .information{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: space-between;
+        margin: 0 100px;
+        // padding: 0;
+        box-sizing: content-box;
+        .our_address{
+            max-width: 230px;
+            p {
+             line-height: 1.8;
+             margin: 35px 0px ;
+            }
+            .email_footer{
+                color: white;
+            }
+        }
+        .useful_links{
+            display: flex;
+            flex-direction: column;
+            max-width: 230px;
+            box-sizing: content-box;
     
-}
+            a {
+                text-decoration: none;
+                color: #717171;
+                margin-bottom: 30px;
+            }
+        }
+        .working_hours{
+            // display:flex;
+            box-sizing: content-box;
+            // justify-content: center;
+            max-width: 230px;
+            .open{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                max-width: 230px;
+        
+                p {
+                    margin-right: 20px;
+                }
+            }
+            .social_links{
+                display: flex;
+                flex-direction: column;
+                // box-sizing: content-box;
+                justify-items: center;
+                max-width: 230px;
+            }
+        }
+        
+    }
+    .escapium_end{
+        display: flex;
+        width: 100%;
+        align-self: flex-end;
+        flex-direction: row;
+         align-items: center;
+        margin-top: 75px;
+        .img_escapium{
+            width: 15%;
+            height: 15%;
+            margin-bottom: 30px;
+        }
+        .copyright_footer{
+            margin-bottom: 85px;
+        }
+    }
 
-.escapium_end{
-    justify-content: center;
-}
-
-.img_escapium{
-    width: 50%;
-    height: 50%;
 }
