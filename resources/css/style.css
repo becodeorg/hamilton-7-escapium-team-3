@@ -1042,11 +1042,11 @@ main {
 .Howitworks_container {
   background-color: #222222;
   position: relative;
-  align-items: center;
-  justify-content: center;
   width: auto;
   height: 700px;
   font-family: Montserrat;
+  justify-content: center;
+  align-content: center;
 }
 .Howitworks_container::after {
   content: "";
@@ -1059,14 +1059,9 @@ main {
   background-color: rgb(51, 51, 51);
   border-radius: 30px;
 }
-.Howitworks_container h2 {
-  color: white;
-  text-align: center;
-}
 .Howitworks_container ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding-top: 55px;
   padding-bottom: 55px;
 }
@@ -1114,85 +1109,6 @@ main {
   font-weight: 700;
   padding-top: 180px;
   margin-bottom: 40px;
-  position: relative;
-}
-.testimonials_container h1::after {
-  content: "";
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 37px;
-  height: 5px;
-  background-color: #9b9b9b;
-  border-radius: 20px;
-}
-.testimonials_container .caroussel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.testimonials_container .caroussel .caroussel__card {
-  width: 450px;
-  text-align: center;
-  margin: 120px 70px 40px;
-}
-.testimonials_container .caroussel .caroussel__card p {
-  font-weight: 500;
-  font-size: 16px;
-  color: #797979;
-  line-height: 2;
-  opacity: 90%;
-  margin-bottom: 50px;
-}
-.testimonials_container .caroussel .caroussel__card .customer--name {
-  margin-top: 15px;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-.testimonials_container .arrow {
-  color: #222222;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.testimonials_container .arrow::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-60deg);
-  height: 2px;
-  width: 120px;
-  opacity: 20%;
-  background-color: #3c3c3c;
-}
-.testimonials_container .arrow i {
-  font-size: 30px;
-  margin: 0 60px 180px;
-  transition: 0.1s linear;
-  cursor: pointer;
-}
-.testimonials_container .arrow i:hover {
-  color: rgb(171, 25, 27);
-}
-
-.blogposts_container {
-  background-color: #1B1B1B;
-  font-family: "Montserrat", sans-serif;
-}
-.blogposts_container .container-h2 {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  padding-top: 180px;
-  margin-bottom: 40px;
-  position: relative;
-}
-.blogposts_container .container-h2::after {
 }
 
 .gallery {
@@ -1217,10 +1133,86 @@ main {
   transform: translateX(-50%);
   width: 37px;
   height: 5px;
+  background-color: #9b9b9b;
+  border-radius: 20px;
+}
+.gallery .caroussel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .caroussel .caroussel__card {
+  width: 450px;
+  text-align: center;
+  margin: 120px 70px 40px;
+}
+.gallery .caroussel .caroussel__card p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #797979;
+  line-height: 2;
+  opacity: 90%;
+  margin-bottom: 50px;
+}
+.gallery .caroussel .caroussel__card .customer--name {
+  margin-top: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.gallery .arrow {
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.gallery .arrow::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-60deg);
+  height: 2px;
+  width: 120px;
+  opacity: 20%;
+  background-color: #3c3c3c;
+}
+.gallery .arrow i {
+  font-size: 30px;
+  margin: 0 60px 180px;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+.gallery .arrow i:hover {
+  color: rgb(171, 25, 27);
+}
+
+.blogposts_container {
+  background-color: #1B1B1B;
+  font-family: "Montserrat", sans-serif;
+}
+.blogposts_container .container-h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 180px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.blogposts_container .container-h2::after {
+  content: "";
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 37px;
+  height: 5px;
   background-color: rgb(51, 51, 51);
   border-radius: 20px;
 }
-.gallery .read--more {
+.blogposts_container h3 {
   font-weight: 600;
   color: rgb(171, 25, 27);
   text-align: center;
@@ -1356,14 +1348,21 @@ main {
   color: #F60B0E;
   font-size: 30px;
   padding-right: 20px;
-.gallery .gallery__picture {
+}
+.whocanplay_container .read--more {
+  font-weight: 600;
+  color: rgb(171, 25, 27);
+  text-align: center;
+  font-size: 14px;
+}
+.whocanplay_container .gallery__picture {
   width: 85%;
   margin: 0 auto;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 60px;
 }
-.gallery .btn {
+.whocanplay_container .btn {
   font-size: 15px;
   font-weight: 700;
   display: block;
@@ -1377,7 +1376,7 @@ main {
   color: white;
   transition: 0.1s linear;
 }
-.gallery .btn:hover {
+.whocanplay_container .btn:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1560,7 +1559,8 @@ main {
   }
   .testimonials_container .arrow {
     display: none;
-  .features_rooms-container .btn {
+  }
+  .testimonials_container .btn {
     display: none;
   }
   .form {
@@ -1663,8 +1663,6 @@ main {
     font-size: 20px;
     margin-bottom: 120px;
   }
-}
-@media screen and (min-width: 1250px) and (max-width: 1600px) {
   .features_rooms-container .btn {
     display: none;
   }
@@ -1703,7 +1701,7 @@ main {
     top: 50px;
   }
 }
-@media screen and (min-width: 1250px) and (max-width: 1920px) {
+@media screen and (min-width: 1250px) and (max-width: 1600px) {
   header .dot {
     visibility: hidden;
   }
@@ -1862,9 +1860,29 @@ main {
     background-color: #fefefe;
     width: 100px;
   }
+  .features_rooms-container {
+    font-size: 120%;
+  }
+  .features_rooms-container .features_rooms-title {
+    font-size: 40px;
+  }
+  .Howitworks_container h2 {
+    font-size: 40px;
+  }
+  .Howitworks_container ul {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 130%;
+  }
   .Howitworks_container ul li {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .testimonials_container h1 {
+    font-size: 40px;
+  }
+  .blogposts_container .container-h2 {
+    font-size: 40px;
   }
 }
 main {
