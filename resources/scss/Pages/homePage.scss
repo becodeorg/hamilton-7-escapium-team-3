@@ -1,11 +1,4 @@
-@import '../Base/reset';
-@import '../Base/typography';
-@import '../Helpers/variable';
-@import '../Layout/navbar';
-@import "../Layout/footer";
-@import '../Pages/about';
-@import '../Pages/contact';
-@import '../Pages/blogs';
+
 
 @mixin slides-titles{
     position: absolute;
