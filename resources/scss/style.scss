@@ -7,3 +7,20 @@
 @import './Pages/contact';
 @import './Pages/blogs';
 @import './Pages/homePage.scss';  
+/* Error: Undefined variable.
+ *    ,
+ * 60 |     background-color: $darkest-background;
+ *    |                       ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   resources/scss/Pages/homePage.scss 60:23  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 60 \2502      background-color: $darkest-background;\a    \2502                        ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   resources/scss/Pages/homePage.scss 60:23  root stylesheet";
+}
