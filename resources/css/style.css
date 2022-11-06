@@ -188,12 +188,11 @@ footer {
   font-weight: bolder;
   color: #717171;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.678) 0%, rgba(0, 0, 0, 0.781) 100%), url("/resources/images/images/gallery/room-7-360x222.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678) 0%, rgba(0, 0, 0, 0.781) 100%), url("../resources/images/images/gallery/room-7-360x222.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  justify-items: center;
   flex-direction: column;
 }
 footer h1 {
@@ -367,7 +366,7 @@ main {
 }
 
 .header--about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/images/images/gallery/slide-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("//resources/images/images/gallery/slide-1.jpg");
   background-size: 1920px;
   background-repeat: no-repeat;
   background-position: top;
@@ -497,7 +496,7 @@ main {
 }
 
 .parallax {
-  background-image: url("/resources/images/images/gallery/video-placeholder.jpg");
+  background-image: url("../resources/images/images/gallery/video-placeholder.jpg");
   min-height: 550px;
   background-size: 130%;
   background-position-x: center;
@@ -1874,7 +1873,7 @@ main {
     left: -140px !important;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 1600px) {
   .slideshow-container {
     height: 900px;
     width: 100%;
@@ -1972,7 +1971,7 @@ main {
 }
 
 .header--contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/images/images/gallery/slide-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/images/gallery/slide-1.jpg");
   background-size: 1920px;
   background-repeat: no-repeat;
   background-position: top;
