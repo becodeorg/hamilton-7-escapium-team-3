@@ -1061,7 +1061,7 @@
 }
 
 // LARGE SCREEN
-@media screen and (max-width: 1600px){
+@media screen and (min-width: 1600px){
     .slideshow-container{
         height: 900px;
         width: 100%;
