@@ -1190,43 +1190,17 @@ main {
   padding-top: 180px;
   margin-bottom: 40px;
 }
-
-.gallery {
-  background-color: #1B1B1B;
-  font-family: "Montserrat", sans-serif;
-  padding-bottom: 150px;
-}
-.gallery h1 {
-  text-align: center;
-  color: white;
-  font-size: 47px;
-  font-weight: 700;
-  padding-top: 180px;
-  margin-bottom: 50px;
-  position: relative;
-}
-.gallery h1::after {
-  content: "";
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 37px;
-  height: 5px;
-  background-color: #9b9b9b;
-  border-radius: 20px;
-}
-.gallery .caroussel {
+.testimonials_container .caroussel {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gallery .caroussel .caroussel__card {
+.testimonials_container .caroussel .caroussel__card {
   width: 450px;
   text-align: center;
   margin: 120px 70px 40px;
 }
-.gallery .caroussel .caroussel__card p {
+.testimonials_container .caroussel .caroussel__card p {
   font-weight: 500;
   font-size: 16px;
   color: #797979;
@@ -1234,20 +1208,20 @@ main {
   opacity: 90%;
   margin-bottom: 50px;
 }
-.gallery .caroussel .caroussel__card .customer--name {
+.testimonials_container .caroussel .caroussel__card .customer--name {
   margin-top: 15px;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
 }
-.gallery .arrow {
+.testimonials_container .arrow {
   color: #222222;
   display: flex;
   justify-content: center;
   position: relative;
 }
-.gallery .arrow::after {
+.testimonials_container .arrow::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -1258,13 +1232,13 @@ main {
   opacity: 20%;
   background-color: #3c3c3c;
 }
-.gallery .arrow i {
+.testimonials_container .arrow i {
   font-size: 30px;
   margin: 0 60px 180px;
   transition: 0.1s linear;
   cursor: pointer;
 }
-.gallery .arrow i:hover {
+.testimonials_container .arrow i:hover {
   color: rgb(171, 25, 27);
 }
 
@@ -1429,20 +1403,46 @@ main {
   font-size: 30px;
   padding-right: 20px;
 }
-.whocanplay_container .read--more {
+
+.gallery {
+  background-color: #1B1B1B;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 150px;
+}
+.gallery h1 {
+  text-align: center;
+  color: white;
+  font-size: 47px;
+  font-weight: 700;
+  padding-top: 180px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.gallery h1::after {
+  content: "";
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 37px;
+  height: 5px;
+  background-color: #9b9b9b;
+  border-radius: 20px;
+}
+.gallery .read--more {
   font-weight: 600;
   color: rgb(171, 25, 27);
   text-align: center;
   font-size: 14px;
 }
-.whocanplay_container .gallery__picture {
+.gallery .gallery__picture {
   width: 85%;
   margin: 0 auto;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 60px;
 }
-.whocanplay_container .btn {
+.gallery .btn {
   font-size: 15px;
   font-weight: 700;
   display: block;
@@ -1456,7 +1456,7 @@ main {
   color: white;
   transition: 0.1s linear;
 }
-.whocanplay_container .btn:hover {
+.gallery .btn:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1781,7 +1781,7 @@ main {
     top: 50px;
   }
 }
-@media screen and (min-width: 1250px) and (max-width: 1600px) {
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
   header .dot {
     visibility: hidden;
   }
@@ -1873,7 +1873,7 @@ main {
     left: -140px !important;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1920px) {
   .slideshow-container {
     height: 900px;
     width: 100%;
