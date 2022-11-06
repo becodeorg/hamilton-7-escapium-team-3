@@ -9,7 +9,6 @@ footer{
     background-position: center;
     display :flex;
     align-items: center;
-    justify-items: center;
     flex-direction: column;
        
      h1{
@@ -37,13 +36,12 @@ footer{
     .information{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-items: space-between;
-        margin: 0 100px;
-        // padding: 0;
+        justify-content: space-between;
+        margin: 50px 100px;
         box-sizing: content-box;
         .our_address{
             max-width: 230px;
+            margin-right: 150px;
             p {
              line-height: 1.8;
              margin: 35px 0px ;
@@ -56,6 +54,7 @@ footer{
             display: flex;
             flex-direction: column;
             max-width: 230px;
+            margin-right: 150px;
             box-sizing: content-box;
     
             a {
@@ -65,45 +64,143 @@ footer{
             }
         }
         .working_hours{
-            // display:flex;
             box-sizing: content-box;
-            // justify-content: center;
-            max-width: 230px;
+            width: 270px;
+            margin-right: 150px;
+            
             .open{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 margin-bottom: 30px;
-                max-width: 230px;
+                justify-content: space-between;
+                
         
                 p {
-                    margin-right: 20px;
+                    margin-right: 40px;
+
                 }
             }
+        }
             .social_links{
                 display: flex;
                 flex-direction: column;
-                // box-sizing: content-box;
                 justify-items: center;
                 max-width: 230px;
-            }
-        }
-        
-    }
-    .escapium_end{
+                .social {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    text-align: center;
+                        li {
+                            display: inline-block;
+                        }
+                        a {
+                            display: inline-block;
+                            font-size: 18px;
+                            line-height: 30px;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 36px;
+                            background-color: #222222;
+                            color: #fff;
+                            margin: 0 3px 3px 0;
+                            &:visited {
+                                color: white;
+                            }
+                            &:hover {
+                                text-decoration: none;
+                                background-color: #ee7c22;
+                            }
+                        }
+                        }    
+                    }
+                }
+   
+    
+        .escapium_end{
         display: flex;
         width: 100%;
-        align-self: flex-end;
-        flex-direction: row;
+        flex-direction: column;
          align-items: center;
+         justify-content: center;
         margin-top: 75px;
         .img_escapium{
-            width: 15%;
-            height: 15%;
+            width: 10%;
+            height: 10%;
             margin-bottom: 30px;
         }
         .copyright_footer{
-            margin-bottom: 85px;
+            margin-bottom: 50px;
         }
     }
 
 }
+
+//Format tablette
+@media screen and (max-width: 1250px) {
+    .information{
+        -ms-flex-align: center;
+        justify-content: space-around;
+        font-size: 90%;
+
+        .h1{
+            font-size: 210%;
+        }
+        .working_hours{
+            margin-right: 25px !important;
+            box-sizing: content-box;
+            
+            .open{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 30px;
+                justify-content: space-between;
+            }
+        }
+        .our_address{
+            margin-right: 35px !important;
+        }
+        .useful_links{
+            margin-right: 35px !important;
+        }
+        .social_links{
+            margin-right: 35px !important;
+        }
+    }
+
+    .escapium_end{
+
+        .img_escapium{
+            width: 120px !important;
+        }
+        .copyright_footer{
+            font-size: 100% !important;
+        }
+    }
+}
+
+//Format mobile
+@media screen and (max-width: 768px) {
+    footer {
+
+        .information {
+            flex-direction: column !important;
+
+            .working_hours{
+                margin-right: 10px !important;
+            }
+        }
+        .escapium_end{
+            flex-direction: column !important;
+
+            .img_escapium{
+                width: 120px !important;  
+            }
+
+            .copyright_footer{
+                font-size:80% !important;
+            }
+        }
+        }
+    }
+
