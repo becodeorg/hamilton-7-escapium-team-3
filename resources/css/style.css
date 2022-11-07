@@ -1781,7 +1781,7 @@ main {
     top: 50px;
   }
 }
-@media screen and (min-width: 1250px) and (max-width: 1920px) {
+@media screen and (min-width: 1250px) and (max-width: 1600px) {
   header .dot {
     visibility: hidden;
   }
@@ -1873,7 +1873,7 @@ main {
     left: -140px !important;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1600px) {
   .slideshow-container {
     height: 900px;
     width: 100%;
